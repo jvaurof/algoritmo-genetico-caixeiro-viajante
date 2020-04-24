@@ -36,10 +36,15 @@ function Rotas(qc) {
         /*teorema de pitagoras*/
         const a = Math.pow((cidade1.getPontoX() - cidade2.getPontoX()), 2)
         const b = Math.pow((cidade1.getPontoY() - cidade2.getPontoY()), 2)
-        dist[j] = Math.sqrt(a + b)
+        dist[j] = parseInt(Math.sqrt(a + b), 10)
       })
       distancias.push(dist)
     })
+  }
+
+  this.exibirDistancias = function () {
+    console.log('Distâncias')
+    console.table(distancias)
   }
 }
 

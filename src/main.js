@@ -1,6 +1,6 @@
 const Evolucao = require('./classes/evolucao.js')
 
-const QUANTIDADE_CIDADES = 6
+const QUANTIDADE_CIDADES = 10
 const TAMANHO_POPULACAO = 6
 const LIMITE_GERACOES = 100
 

@@ -14,6 +14,8 @@ function Evolucao(quantidadeCidades, tamanhoPopulacao, limiteGeracoes = 'infinat
   populacao.setTamanho(tamanhoPopulacao)
 
   this.evoluir = function () {
+    console.time('  Tempo de execução')
+
     populacao.iniciarPopulacao(rotas.getQuantidadeCidades())
     populacao.calcularFitness(rotas.getDistancias())
 
@@ -33,6 +35,11 @@ function Evolucao(quantidadeCidades, tamanhoPopulacao, limiteGeracoes = 'infinat
       populacao.ajustarPopulacao()
       populacao.setGeracao()
     } while (true)
+
+    rotas.exibirDistancias()
+    populacao.exibirSolucaoEncontrada()
+
+    console.timeEnd('  Tempo de execução')
   }
 }
 

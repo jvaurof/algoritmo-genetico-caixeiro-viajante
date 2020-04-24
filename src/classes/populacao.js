@@ -95,6 +95,12 @@ function Populacao() {
     console.log('geração: ', geracao)
     console.log('\n****************************\n')
   }
+
+  this.exibirSolucaoEncontrada = function () {
+    console.log('Solução encontrada:')
+    console.log('  Individuo: ', individuos[0].getCromossomo())
+    console.log('  Menor distância: ', individuos[0].getFitness())
+  }
 }
 
 module.exports = Populacao
