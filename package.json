@@ -1,0 +1,10 @@
+{
+  "name": "algoritmo-genetico-caixeiro-viajante",
+  "version": "1.0.0",
+  "description": "Algoritmo genético aplicado ao caso do caixeiro viajante",
+  "main": "src/main.js",
+  "repository": "https://github.com/jvaurof/algoritmo-genetico-caixeiro-viajante.git",
+  "author": "jvaurof",
+  "license": "MIT",
+  "private": null
+}
